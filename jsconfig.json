@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "checkJs": true,
+    },
+    "typeAcquisition": {
+        "enable": true,
+        "include": [
+            "node",
+            "react",
+            "react-dom"
+        ]
+    },
+    "include": [
+        "index.js",
+        "src"
+    ],
+    "exclude":[
+        "build",
+        "public",
+    ]
+}

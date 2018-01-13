@@ -1,0 +1,30 @@
+{
+  "name": "react-electron",
+  "version": "0.0.1",
+  "main": "index.js",
+  "homepage": ".",
+  "private": true,
+  "scripts": {
+    "start": "start /B electron . && npm run react-start",
+    "react-start": "node ./build-scripts/react-script-override start",
+    "build": "node ./build-scripts/react-script-override build",
+    "test": "node ./build-scripts/react-script-override test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "rewire": "^3.0.2",
+    "proxyquire": "^1.8.0",
+    "react-scripts": "1.0.17",
+    "webpack-node-externals": "^1.6.0",
+    "electron-devtools-installer": "^2.2.3"
+  },
+  "dependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/node": "^9.3.0",
+    "@types/react": "^16.0.34",
+    "@types/react-dom": "^16.0.3",
+    "electron": "^1.7.10",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
